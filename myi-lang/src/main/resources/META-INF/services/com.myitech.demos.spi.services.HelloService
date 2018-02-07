@@ -1,0 +1,2 @@
+com.myitech.demos.spi.services.impl.HelloServiceImpl
+com.myitech.demos.spi.services.impl.TomHelloServiceImpl

@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.myitech.demos</groupId>
+  <artifactId>myi-project</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>myi-project</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!--<spring.version>4.1.5.RELEASE</spring.version>-->
+    <spring.version>5.0.3.RELEASE</spring.version>
+    <jetty.version>9.4.7.RC0</jetty.version>
+    <guice.version>3.0</guice.version>
+    <sun.jersey.version>1.18.3</sun.jersey.version>
+    <glassfish.jersey.version>2.26</glassfish.jersey.version>
+    <hk2.version>2.5.0-b42</hk2.version>
+    <tomcat.version>8.5.5</tomcat.version>
+  </properties>
+
+  <modules>
+      <module>myi-lang</module>
+      <module>myi-design</module>
+      <module>myi-di</module>
+      <module>myi-services</module>
+      <module>myi-platform</module>
+      <module>myi-component</module>
+      <module>myi-spring</module>
+      <module>myi-guava</module>
+      <module>myi-db</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!--freemarker-->
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>2.3.22</version>
+      </dependency>
+
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>3.8.1</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <!--<dependencies>-->
+    <!--&lt;!&ndash; start slf4j-log4j&ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>ch.qos.logback</groupId>-->
+      <!--<artifactId>logback-classic</artifactId>-->
+      <!--<version>1.1.3</version>-->
+    <!--</dependency>-->
+  <!--</dependencies>-->
+
+</project>
